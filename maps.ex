@@ -1,6 +1,13 @@
+## Description: Maps in Elixir
+# Topics Covered
+# 1. Initializing a Map
+# 2. Accessing values
+# 3. Updating values & merging
+# 4. Removing values
+# 5. Iterating
+
 empty_map = %{}
 initial_map = %{a: 1, b: 2, c: 3}
-
 
 # get an element from a map
 initial_map[:a]
@@ -24,6 +31,10 @@ new_map
 initial_map = %{a: 1, b: 2, c: 3}
 %{initial_map | a: 4}
 
+# remove a key-value pair from a map
+initial_map = %{a: 1, b: 2, c: 3}
+result = Map.delete(initial_map, :a)
+result
 
 # utility methods
 Map.keys(initial_map)   # get all the keys
@@ -53,6 +64,10 @@ Enum.map(
   end
 ) |>
 Enum.into(%{})
+
+
+# merging 2 maps
+Map.merge(%{a: 1, b: 2}, %{a: 3, d: 4}) # if keys are common the one on the RHS will be taken
 
 # references
 # https://joyofelixir.com/10-maps-in-elixir/
