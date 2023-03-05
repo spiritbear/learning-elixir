@@ -22,3 +22,10 @@ File.write("data/haiku-output.txt", new_content)
 
 # deleting a file, this will remove a file permanently
 File.rm("delete-me.txt")
+
+# References
+# https://hexdocs.pm/elixir/File.html
+# https://hexdocs.pm/elixir/File.Stream.html
+
+# For CSV Files please refer to the CSV module
+# https://hexdocs.pm/csv/CSV.html
