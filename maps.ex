@@ -27,7 +27,7 @@ new_map
 new_map = Map.put(initial_map, :x, 10)
 new_map
 
-# update a map using concat, you cant add using this operator
+# update a map using concat, you cant add a key using this operator
 initial_map = %{a: 1, b: 2, c: 3}
 %{initial_map | a: 4}
 
